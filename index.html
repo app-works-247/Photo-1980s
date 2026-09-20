@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoAI 1980s — Authentic 1980s AI Portrait Studio</title>
+  <meta name="description" content="Turn your selfie into authentic 1980s portraits with 35mm film grain, big feathered hair, vintage fashion, and Face-Lock technology. Available on iOS.">
+  <meta name="keywords" content="1980s photo, AI portrait, 80s photo generator, retro yearbook, vintage photo, face preservation, PhotoAI 1980s">
+  <meta name="author" content="AppWorks 247">
+  
+  <!-- OpenGraph / Social Media Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PhotoAI 1980s — Turn Your Photo Into The 1980s">
+  <meta property="og:description" content="Step into a time machine. Relive the golden era of polaroid portraits, feathered hair, and warm analog film while preserving your true face.">
+  <meta property="og:image" content="./assets/images/after-1980s-portrait.jpg">
+  <meta property="og:url" content="https://app-works-247.github.io/Photo-1980s/">
+
+  <!-- Favicon / App Icon -->
+  <link rel="icon" type="image/png" href="./assets/images/app-icon.png">
+  <link rel="apple-touch-icon" href="./assets/images/app-icon.png">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Ambient background grid -->
+  <div class="retro-grid-bg" aria-hidden="true"></div>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-logo" aria-label="PhotoAI 1980s Home">
+        <img src="./assets/images/app-icon.png" alt="PhotoAI 1980s Icon" class="brand-icon">
+        <div class="brand-text-wrap">
+          <span class="brand-title">PhotoAI <span>1980s</span></span>
+          <span class="brand-tag">Retro Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#features" class="nav-link" data-i18n="nav_features">Features</a>
+        <a href="#before-after" class="nav-link" data-i18n="nav_before_after">Before & After</a>
+        <a href="#styles" class="nav-link" data-i18n="nav_styles">26+ Styles</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <!-- Actions (Language Switcher & CTA) -->
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button type="button" class="lang-btn" data-lang="vi" aria-label="Tiếng Việt">VI</button>
+        </div>
+
+        <a href="#download" class="btn btn-primary btn-sm" data-i18n="nav_get_app">Get App</a>
+
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" aria-label="Mobile Navigation">
+      <a href="#features" class="nav-link" data-i18n="nav_features">Features</a>
+      <a href="#before-after" class="nav-link" data-i18n="nav_before_after">Before & After</a>
+      <a href="#styles" class="nav-link" data-i18n="nav_styles">26+ Styles</a>
+      <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+      <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      <a href="./privacy.html" class="nav-link" data-i18n="footer_link_privacy">Privacy Policy</a>
+      <a href="./terms.html" class="nav-link" data-i18n="footer_link_terms">Terms of Service</a>
+      <div style="padding-top: 10px;">
+        <a href="#download" class="btn btn-primary" style="width: 100%;" data-i18n="nav_get_app">Get App</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         Hero Section
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Text Column -->
+        <div class="hero-content">
+          <div class="badge-eyebrow" data-i18n="hero_eyebrow">
+            THE 1980s PORTRAIT STUDIO
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero_title">Turn Your Photo Into The 1980s</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Upload your photo and our precision AI recreates you in authentic 80s style — big feathered hair, vintage fashion, warm film grain — while preserving your true face identity.
+          </p>
+
+          <div class="hero-pills">
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="hero_pill_1">GPT-Image 2.5</span>
+            </span>
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="hero_pill_2">Face-preserving</span>
+            </span>
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="hero_pill_3">26+ Curated Styles</span>
+            </span>
+          </div>
+
+          <div class="hero-actions" id="download">
+            <a href="https://apps.apple.com/app/id6740000000" target="_blank" rel="noopener" class="app-store-btn" id="hero-apple-btn">
+              <svg viewBox="0 0 170 170">
+                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.6-7.85-11.75-14.43-6.41-10.22-11.45-21.78-15.11-34.69-3.66-12.92-5.49-25.04-5.49-36.37 0-16.71 4.54-30.73 13.62-42.06 9.08-11.33 20.73-17.13 34.95-17.41 5.35 0 11.16 1.45 17.43 4.35 6.26 2.91 10.29 4.41 12.08 4.5 1.45 0 5.68-1.56 12.69-4.68 7.02-3.12 13.06-4.51 18.13-4.17 13.88.78 24.84 5.91 32.88 15.4-12.28 7.47-18.3 17.84-18.06 31.11.23 10.37 4.17 19.14 11.82 26.31 7.65 7.17 16.78 11.29 27.39 12.36-2.35 7.24-5.44 14.88-9.28 22.91zM119.22 31.02c0-7.35 2.65-14.28 7.95-20.78 5.3-6.5 11.82-10.24 19.56-11.24.23 1.23.34 2.34.34 3.35 0 7.24-2.73 14.28-8.2 21.11-5.47 6.83-12.02 10.66-19.65 11.49-.11-1.34-.17-2.65-.17-3.93z"/>
+              </svg>
+              <div class="app-store-text">
+                <span class="sub" data-i18n="hero_btn_appstore_sub">Download on the</span>
+                <span class="title" data-i18n="hero_btn_appstore_title">App Store</span>
+              </div>
+            </a>
+
+            <a href="#styles" class="btn btn-secondary" data-i18n="hero_btn_explore">
+              Explore Styles
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone Mockup Column -->
+        <div class="hero-visual">
+          <div class="mockup-wrapper">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="phone-notch"></div>
+                <img src="./assets/images/after-1980s-portrait.jpg" alt="1980s AI Portrait Result" loading="eager">
+                <div class="phone-overlay-badge">
+                  <div class="badge-info">
+                    <h4 data-i18n="badge_polaroid_title">1985 Yearbook</h4>
+                    <p data-i18n="badge_polaroid_sub">35mm Analog Film Grain</p>
+                  </div>
+                  <span style="color: var(--color-gold); font-size: 1.2rem;">★ ★ ★ ★ ★</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Retro Badges -->
+            <div class="floating-tag tag-1" data-i18n="floating_tag_1">
+              ✨ Pure 80s Retro Vibe
+            </div>
+            <div class="floating-tag tag-2" data-i18n="floating_tag_2">
+              🔒 100% Face-Lock Tech
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Interactive Before & After Comparison
+         ==================================================================== -->
+    <section class="comparison-section" id="before-after">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-eyebrow" data-i18n="ba_eyebrow">
+            IDENTITY PRESERVATION
+          </div>
+          <h2 class="section-title" data-i18n="ba_title">
+            Your True Face, Pure 80s Vibe
+          </h2>
+          <p class="section-subtitle" data-i18n="ba_subtitle">
+            Unlike generic AI filters that replace you with a stranger, our precision model locks your unique facial structure, skin tone, and eyes while transforming only the fashion and atmosphere.
+          </p>
+        </div>
+
+        <div class="comparison-container">
+          <div class="comparison-slider-wrapper" id="before-after-slider">
+            <!-- Background Image (Original Before) -->
+            <img src="./assets/images/before-portrait.jpg" alt="Original Modern Portrait" class="comparison-image">
+
+            <!-- Clipped Image (1980s Retro After) -->
+            <div class="comparison-after-wrapper">
+              <img src="./assets/images/after-1980s-portrait.jpg" alt="1980s Retro Transformed Portrait">
+            </div>
+
+            <!-- Slider Handle -->
+            <div class="comparison-handle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41zM6 6h2v12H6V6z"/>
+              </svg>
+            </div>
+
+            <!-- Floating Labels -->
+            <span class="comparison-label label-before" data-i18n="ba_label_before">ORIGINAL (2026)</span>
+            <span class="comparison-label label-after" data-i18n="ba_label_after">1985 RETRO AI</span>
+          </div>
+
+          <div class="comparison-hint">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4m0 0l4-4m-4 4h18m-4 4l4-4m0 0l-4-4"/></svg>
+            <span data-i18n="ba_hint">Drag the slider to compare before and after</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Features Section
+         ==================================================================== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-eyebrow" data-i18n="feat_eyebrow">
+            WHY PHOTOAI 1980s
+          </div>
+          <h2 class="section-title" data-i18n="feat_title">
+            Authentic Nostalgia Meets Cutting-Edge AI
+          </h2>
+          <p class="section-subtitle" data-i18n="feat_subtitle">
+            Designed specifically to recreate the exact textures, lighting and analog camera optics of the 1980s.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">🔒</div>
+            <h3 data-i18n="feat_1_title">Face-Lock Technology</h3>
+            <p data-i18n="feat_1_desc">Advanced neural networks preserve your eyes, smile, and facial structure so you are instantly recognizable in every vintage photo.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">🎞️</div>
+            <h3 data-i18n="feat_2_title">35mm Film & Halation</h3>
+            <p data-i18n="feat_2_desc">Authentic Kodachrome and Ektachrome film emulation with organic grain, soft highlights, warm tungsten glow, and gentle vignette.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">🌐</div>
+            <h3 data-i18n="feat_3_title">26+ Global Styles</h3>
+            <p data-i18n="feat_3_desc">From 1985 American high school yearbooks and Bollywood retro to Tokyo City Pop, French Riviera, and Vietnamese nostalgia.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">📐</div>
+            <h3 data-i18n="feat_4_title">Multiple Aspect Ratios</h3>
+            <p data-i18n="feat_4_desc">Export in 1:1 square, 9:16 portrait stories, 3:4 classic photo, 16:9 cinematic, or 3:2 standard 35mm formats.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">⚡</div>
+            <h3 data-i18n="feat_5_title">Instant HD Generation</h3>
+            <p data-i18n="feat_5_desc">Cloud GPU acceleration delivers ultra-high-resolution studio-grade portraits ready for printing or social media in seconds.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">🛡️</div>
+            <h3 data-i18n="feat_6_title">Privacy & Data Protection</h3>
+            <p data-i18n="feat_6_desc">Your photos are encrypted, never sold, and never used to train public AI models. Delete photos or your account anytime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         26+ Style Showcase Section
+         ==================================================================== -->
+    <section class="styles-section" id="styles">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-eyebrow" data-i18n="styles_eyebrow">
+            STYLE SHOWCASE
+          </div>
+          <h2 class="section-title" data-i18n="styles_title">
+            Choose Your 1980s Persona
+          </h2>
+          <p class="section-subtitle" data-i18n="styles_subtitle">
+            Curated vintage collections across cultures, aesthetics, and iconic 80s moments.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="style-tabs" role="tablist">
+          <button type="button" class="style-tab-btn active" data-category="all" data-i18n="tab_all">All Styles</button>
+          <button type="button" class="style-tab-btn" data-category="popular" data-i18n="tab_popular">Popular Styles</button>
+          <button type="button" class="style-tab-btn" data-category="world" data-i18n="tab_world">Around the World</button>
+          <button type="button" class="style-tab-btn" data-category="gender" data-i18n="tab_gender">For You</button>
+          <button type="button" class="style-tab-btn" data-category="couple" data-i18n="tab_couple">Couples</button>
+        </div>
+
+        <!-- Styles Grid -->
+        <div class="styles-grid">
+          <!-- Item 1: 1985 Yearbook -->
+          <div class="style-card" data-category="popular">
+            <div class="style-img-wrapper">
+              <img src="https://raw.githubusercontent.com/codaaiteam/1980s-ai-photo-prompts/main/examples/yearbook-1985.jpg" alt="1985 Yearbook" loading="lazy">
+              <span class="style-tag">POPULAR</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="1985 Yearbook" data-vi="Kỷ yếu Năm 1985">1985 Yearbook</h4>
+              <p class="style-desc" data-en="High-school backdrop with feathered hair & sweater vest" data-vi="Phông nền studio trung học kinh điển với tóc bồng bềnh">High-school backdrop with feathered hair & sweater vest</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Bollywood 1980s -->
+          <div class="style-card" data-category="popular">
+            <div class="style-img-wrapper">
+              <img src="https://raw.githubusercontent.com/codaaiteam/1980s-ai-photo-prompts/main/examples/bollywood-1980s.jpg" alt="1980s Bollywood" loading="lazy">
+              <span class="style-tag">CINEMATIC</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="1980s Bollywood" data-vi="Bollywood Thập niên 1980">1980s Bollywood</h4>
+              <p class="style-desc" data-en="Retro Hindi-cinema editorial with classic telephone & warm glow" data-vi="Phong cách điện ảnh Ấn Độ cổ điển với điện thoại quay số">Retro Hindi-cinema editorial with classic telephone & warm glow</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Studio Portrait 1980s -->
+          <div class="style-card" data-category="popular">
+            <div class="style-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80" alt="1980s Studio Portrait" loading="lazy">
+              <span class="style-tag">GLAMOUR</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="1980s Studio Glamour" data-vi="Chân dung Studio Quyến rũ">1980s Studio Glamour</h4>
+              <p class="style-desc" data-en="Soft-focus portrait with warm rim lighting & pearl earrings" data-vi="Ảnh chân dung mộng mơ với tiêu cự mềm và đèn tungsten">Soft-focus portrait with warm rim lighting & pearl earrings</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Disco & Nightclub -->
+          <div class="style-card" data-category="popular">
+            <div class="style-img-wrapper">
+              <img src="https://raw.githubusercontent.com/codaaiteam/1980s-ai-photo-prompts/main/examples/disco-1980s.jpg" alt="1980s Disco & Nightclub" loading="lazy">
+              <span class="style-tag">NEON VIBE</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="1980s Disco Club" data-vi="Vũ trường & Sàn nhảy 80s">1980s Disco Club</h4>
+              <p class="style-desc" data-en="Vibrant roller-skate rink lights, glitter & neon glow" data-vi="Ánh đèn neon rực rỡ và quả cầu disco lấp lánh">Vibrant roller-skate rink lights, glitter & neon glow</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Tokyo City Pop -->
+          <div class="style-card" data-category="world">
+            <div class="style-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=600&auto=format&fit=crop&q=80" alt="Tokyo City Pop 1980s" loading="lazy">
+              <span class="style-tag">JAPAN</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="Tokyo City Pop" data-vi="Tokyo City Pop 1980s">Tokyo City Pop</h4>
+              <p class="style-desc" data-en="Shinjuku neon nightlife, cassette Walkman & oversized blazer" data-vi="Ánh đèn đêm Shinjuku, máy nghe nhạc cassette và áo vest rộng">Shinjuku neon nightlife, cassette Walkman & oversized blazer</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Vietnam 1980s Nostalgia -->
+          <div class="style-card" data-category="world">
+            <div class="style-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600&auto=format&fit=crop&q=80" alt="Vietnam 1980s" loading="lazy">
+              <span class="style-tag">VIETNAM</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="Vietnam 1980s Nostalgia" data-vi="Việt Nam Thập niên 1980">Vietnam 1980s Nostalgia</h4>
+              <p class="style-desc" data-en="Vintage bicycle, classic shirt & warm historic street corner" data-vi="Xe đạp Thống Nhất, góc phố cổ kính và nụ cười bình dị">Vintage bicycle, classic shirt & warm historic street corner</p>
+            </div>
+          </div>
+
+          <!-- Item 7: French Riviera 1980s -->
+          <div class="style-card" data-category="world">
+            <div class="style-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&auto=format&fit=crop&q=80" alt="French Riviera 1980s" loading="lazy">
+              <span class="style-tag">FRANCE</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="French Riviera" data-vi="Bờ biển Pháp 1980s">French Riviera</h4>
+              <p class="style-desc" data-en="Cannes coastal sun, striped polo shirt & vintage sunglasses" data-vi="Nắng vàng Cannes, áo polo kẻ sọc và kính râm cổ điển">Cannes coastal sun, striped polo shirt & vintage sunglasses</p>
+            </div>
+          </div>
+
+          <!-- Item 8: Couple Retro 1980s -->
+          <div class="style-card" data-category="couple">
+            <div class="style-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&auto=format&fit=crop&q=80" alt="1980s Couple" loading="lazy">
+              <span class="style-tag">COUPLE</span>
+            </div>
+            <div class="style-info">
+              <h4 class="style-name" data-en="1980s Retro Couple" data-vi="Cặp Đôi Thập Niên 1980">1980s Retro Couple</h4>
+              <p class="style-desc" data-en="Matching denim jackets, diner booth & vintage romance" data-vi="Áo khoác denim đôi, quán ăn vintage và tình yêu ngọt ngào">Matching denim jackets, diner booth & vintage romance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         How It Works Section
+         ==================================================================== -->
+    <section class="steps-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-eyebrow" data-i18n="steps_eyebrow">
+            HOW IT WORKS
+          </div>
+          <h2 class="section-title" data-i18n="steps_title">
+            Travel Back in Time in 3 Easy Steps
+          </h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3 data-i18n="steps_1_title">1. Choose a Style</h3>
+            <p data-i18n="steps_1_desc">Pick from 26+ authentic 1980s themes: Yearbook, Disco Rink, Bollywood, City Pop, or Vintage Wedding.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3 data-i18n="steps_2_title">2. Upload a Photo</h3>
+            <p data-i18n="steps_2_desc">Take a selfie or choose a clear portrait from your photo library. Good lighting gives the best results.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3 data-i18n="steps_3_title">3. Get Your 80s Portrait</h3>
+            <p data-i18n="steps_3_desc">Our AI transforms your hair, wardrobe, and lighting while locking your face. Save in HD or share immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Pricing Section
+         ==================================================================== -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-eyebrow" data-i18n="pricing_eyebrow">
+            RETRO PASS & CREDITS
+          </div>
+          <h2 class="section-title" data-i18n="pricing_title">
+            Simple, Transparent Pricing
+          </h2>
+          <p class="section-subtitle" data-i18n="pricing_subtitle">
+            Start with 3 free credits upon signup, plus 1 daily free bonus. Upgrade anytime for unlimited creative power.
+          </p>
+        </div>
+
+        <!-- Toggle Switcher -->
+        <div class="pricing-toggle-wrap">
+          <div class="pricing-toggle">
+            <button type="button" class="pricing-toggle-btn active" data-target="subscription" data-i18n="pricing_tab_sub">Monthly Plans</button>
+            <button type="button" class="pricing-toggle-btn" data-target="packs" data-i18n="pricing_tab_pack">Credit Packs</button>
+          </div>
+        </div>
+
+        <!-- Monthly Subscriptions Grid -->
+        <div class="pricing-grid pricing-grid-subscription">
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 data-i18n="plan_basic_title">Basic Plan</h3>
+              <p data-i18n="plan_basic_desc">Perfect for nostalgic weekend creators</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-num" data-i18n="plan_basic_price">$4.99</span>
+              <span class="price-unit" data-i18n="plan_basic_unit">/ month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_basic_f1">100 credits per month</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_basic_f2">Standard GPU queue</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_basic_f3">All 26+ retro styles</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_basic_f4">Full HD export</span>
+              </li>
+            </ul>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="plan_basic_btn">Get Basic</a>
+          </div>
+
+          <!-- Pro Plan (Featured) -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge" data-i18n="badge_popular">MOST POPULAR</div>
+            <div class="pricing-header">
+              <h3 data-i18n="plan_pro_title">Pro Plan</h3>
+              <p data-i18n="plan_pro_desc">For content creators & retro enthusiasts</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-num" data-i18n="plan_pro_price">$9.99</span>
+              <span class="price-unit" data-i18n="plan_pro_unit">/ month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_pro_f1">250 credits per month</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_pro_f2">Fast-track GPU queue</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_pro_f3">All styles + new releases</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_pro_f4">High-resolution 4K export</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_pro_f5">No watermarks</span>
+              </li>
+            </ul>
+            <a href="#download" class="btn btn-primary" style="width: 100%;" data-i18n="plan_pro_btn">Start Pro</a>
+          </div>
+
+          <!-- Studio Plan -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 data-i18n="plan_studio_title">Studio Plan</h3>
+              <p data-i18n="plan_studio_desc">Maximum speed and creative volume</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-num" data-i18n="plan_studio_price">$19.99</span>
+              <span class="price-unit" data-i18n="plan_studio_unit">/ month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_studio_f1">600 credits per month</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_studio_f2">Highest priority instant GPU</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_studio_f3">All premium AI models</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="plan_studio_f4">Batch multi-photo generation</span>
+              </li>
+            </ul>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="plan_studio_btn">Get Studio</a>
+          </div>
+        </div>
+
+        <!-- Credit Packs Grid (Hidden by default) -->
+        <div class="pricing-grid pricing-grid-packs" style="display: none;">
+          <!-- Starter Pack -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 data-i18n="pack_starter_title">Starter Pack</h3>
+              <p data-i18n="pack_starter_desc">Quick one-time top-up</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-num" data-i18n="pack_starter_price">$1.99</span>
+              <span class="price-unit" data-i18n="pack_starter_unit">one-time</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_starter_f1">30 credits instantly</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_starter_f2">Never expires</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_starter_f3">Full access to all styles</span>
+              </li>
+            </ul>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="pack_starter_btn">Buy 30 Credits</a>
+          </div>
+
+          <!-- Value Pack -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 data-i18n="pack_value_title">Value Pack</h3>
+              <p data-i18n="pack_value_desc">Great balance of credits and price</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-num" data-i18n="pack_value_price">$4.99</span>
+              <span class="price-unit" data-i18n="pack_value_unit">one-time</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_value_f1">80 credits instantly</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_value_f2">Never expires</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_value_f3">High-resolution export</span>
+              </li>
+            </ul>
+            <a href="#download" class="btn btn-primary" style="width: 100%;" data-i18n="pack_value_btn">Buy 80 Credits</a>
+          </div>
+
+          <!-- Power Pack -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 data-i18n="pack_power_title">Power Pack</h3>
+              <p data-i18n="pack_power_desc">Best value per credit</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-num" data-i18n="pack_power_price">$12.99</span>
+              <span class="price-unit" data-i18n="pack_power_unit">one-time</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_power_f1">250 credits instantly</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_power_f2">Never expires</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pack_power_f3">Fast processing speed</span>
+              </li>
+            </ul>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="pack_power_btn">Buy 250 Credits</a>
+          </div>
+        </div>
+
+        <div class="free-credits-note" data-i18n="free_credits_banner">
+          🎁 3 Free Credits on Signup • +1 Free Credit Every Day You Check In!
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FAQ Section
+         ==================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-eyebrow" data-i18n="faq_eyebrow">
+            GOT QUESTIONS?
+          </div>
+          <h2 class="section-title" data-i18n="faq_title">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span data-i18n="faq_q1">How does the Face-Lock technology work?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1">Our specialized neural pipeline maps your facial landmark geometry, eye shape, smile, and contours. It holds these key features intact while repainting the surrounding hair, wardrobe, and scene with authentic 1980s styling. You always look like yourself!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span data-i18n="faq_q2">Is my personal photo data safe and private?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2">Yes, completely. Your photos are uploaded via TLS encryption to a private, access-restricted cloud storage bucket. They are processed solely to fulfill your generation request. We never sell your photos, and we never use your likeness to train public AI foundation models.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span data-i18n="faq_q3">Can I delete my uploaded and generated photos?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3">Yes. You can delete any photo in your in-app Gallery at any time. You can also tap 'Delete Account' in your Profile settings, which permanently and immediately wipes all your photos, generation history, and account records from our servers.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span data-i18n="faq_q4">How do credits work?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">1 standard photo generation consumes 1 credit. You receive 3 free credits immediately when signing up, and 1 additional free credit daily. Monthly subscriptions and one-time credit packs are available if you want to generate more photos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span data-i18n="faq_q5">What devices are supported?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a5">PhotoAI 1980s is designed for iOS 16.0 or later on iPhone and iPad. It is optimized for the latest Apple silicon with smooth animations and responsive haptics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Bottom CTA Banner
+         ==================================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2 data-i18n="cta_title">Ready to Travel Back in Time?</h2>
+          <p data-i18n="cta_subtitle">Experience the magic of 1980s photography with your own face. Download free on the App Store today.</p>
+          <a href="https://apps.apple.com/app/id6740000000" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta_btn">
+            Download PhotoAI 1980s
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <img src="./assets/images/app-icon.png" alt="PhotoAI 1980s Icon" class="brand-icon">
+          <div class="brand-text-wrap">
+            <span class="brand-title">PhotoAI <span>1980s</span></span>
+            <span class="brand-tag">AppWorks 247</span>
+          </div>
+        </div>
+        <p data-i18n="footer_desc">The authentic 1980s AI portrait studio. Relive the golden age of feathered hair, cassette tapes, neon nights, and warm analog film.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_nav_title">Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features" data-i18n="nav_features">Features</a></li>
+          <li><a href="#before-after" data-i18n="nav_before_after">Before & After</a></li>
+          <li><a href="#styles" data-i18n="nav_styles">26+ Styles</a></li>
+          <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_legal_title">Legal & Privacy</h4>
+        <ul>
+          <li><a href="./privacy.html" data-i18n="footer_link_privacy">Privacy Policy</a></li>
+          <li><a href="./terms.html" data-i18n="footer_link_terms">Terms of Service</a></li>
+          <li><a href="https://github.com/app-works-247/Photo-1980s" target="_blank" rel="noopener">GitHub Project</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_title">Contact & Support</h4>
+        <ul>
+          <li><span style="color: var(--color-text-secondary); font-size: 0.9rem;">AppWorks 247 Studio</span></li>
+          <li><a href="mailto:appworks.247@gmail.com">appworks.247@gmail.com</a></li>
+          <li><a href="https://github.com/app-works-247/Photo-1980s/issues" target="_blank" rel="noopener">Report Issue</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p data-i18n="footer_copyright">© 2026 AppWorks 247. All rights reserved. 1980s AI Photo Generator.</p>
+      <p style="font-size: 0.75rem;">Designed with ❤️ for retro aesthetics enthusiasts</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
