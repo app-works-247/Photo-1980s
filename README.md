@@ -1,6 +1,6 @@
-# PhotoAI 1980s — Landing Page & Privacy Policy
+# Rad Lab — Landing Page & Privacy Policy
 
-> Official static landing page, privacy policy, and terms of service for **PhotoAI 1980s** iOS app, developed by **AppWorks 247**.
+> Official static landing page, privacy policy, and terms of service for the **Rad Lab: 80s Photo Studio** iOS app (formerly PhotoAI 1980s), developed by **AppWorks 247**.
 
 ## 🌐 Live GitHub Pages URLs
 
@@ -25,9 +25,9 @@
 
 - **Retro 1980s Aesthetic**: Authentic dark palette (`#141412`), gold accents (`#bc9478`), and neon glow (`#ff3ca6`, `#ff8a3c`, `#00e5ff`) matching `Theme.swift`.
 - **Bilingual (English & Tiếng Việt)**: One-click toggle between English and Vietnamese, persisted across page loads.
-- **Interactive Before / After Slider**: Drag-and-compare demonstrating the app's core Face-Lock technology and 35mm film grain transformation.
-- **26+ Curated Style Showcase**: Tab-filtered gallery (Popular, Around the World, For You, Couples).
-- **Pricing & StoreKit Alignment**: Monthly subscription plans (Basic, Pro, Studio) and consumable credit packs (Starter, Value, Power) matching `StoreConfig.swift`.
+- **Studio first**: The free on-device studio (camera, darkroom, backdrops, prints, layouts) leads; the optional AI Photo Lab (yearbook, restore, VHS, portrait styles) follows.
+- **Before / After Slider**: Compares an original photo with an AI Yearbook result.
+- **Pricing matching `StoreConfig.swift`**: Credit packs of 30, 80 and 250 credits and the Pro plan (150 credits a month).
 - **App Store Compliant Privacy Policy**: Fully compliant with Apple App Store Review Guidelines 5.1.1 & 5.1.2, GDPR, CCPA, and Vietnam Decree 13/2023/ND-CP.
 
 ---
