@@ -426,6 +426,15 @@ button {
   gap: 24px;
 }
 
+.hero-content .badge-eyebrow {
+  align-self: flex-start;
+}
+
+/* Only shown on narrow screens, where the media query below turns it into a drawer. */
+.mobile-drawer {
+  display: none;
+}
+
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.3rem, 4.5vw, 3.8rem);
@@ -801,6 +810,13 @@ button {
   gap: 28px;
 }
 
+/* Four cards read better as a 2 x 2 block than as 3 + 1. */
+.features-grid.two-col {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
 .feature-card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -1078,6 +1094,12 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   align-items: stretch;
+}
+
+/* A single plan sits centred instead of in the first of three columns. */
+.pricing-grid.single {
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
 }
 
 .pricing-card {
@@ -1497,6 +1519,10 @@ button {
     align-items: center;
   }
 
+  .hero-content .badge-eyebrow {
+    align-self: center;
+  }
+
   .hero-subtitle {
     margin: 0 auto;
   }
@@ -1510,6 +1536,7 @@ button {
   }
 
   .features-grid,
+  .features-grid.two-col,
   .pricing-grid,
   .steps-grid {
     grid-template-columns: 1fr;
